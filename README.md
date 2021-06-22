@@ -3,7 +3,7 @@
 ## Prerequisites
 
 ### Install Python3
-Prior to executing any of the ```*.py``` files in this folder, please make sure that Python 3 is installed on your computer. Click [https://www.python.org/downloads/]("here") to learn how to install Python 3. You may also prefer to have multiple versions of python running on your computer. In that case, click [here]("https://docs.python.org/3/library/venv.html") to learn how to create Python virtual environments.
+Prior to executing any of the ```*.py``` files in this folder, please make sure that Python 3 is installed on your computer. Click [here]("https://www.python.org/downloads/") to learn how to install Python 3. You may also prefer to have multiple versions of python running on your computer. In that case, click [here]("https://docs.python.org/3/library/venv.html") to learn how to create Python virtual environments.
 
 ### Install required packages
 
