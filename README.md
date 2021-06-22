@@ -23,7 +23,7 @@ python3 kmeansUI.py
 ```
 
 You should see the first screen of the K-means application
-!["First screen of the k-means application"]("Kmeans ui.png")
+!["First screen of the k-means application"]("./Kmeans ui.png")
 
 ### Step 2: 
 Enter the number of clusters, *k*, in the input field.
