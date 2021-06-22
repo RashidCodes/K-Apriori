@@ -75,7 +75,11 @@ You should see the first screen of the application.
 ### Step 2:
 Click on the **Iterate** button to see apriori in action. Keep clicking on the button until the algorithm converges.
 
-<img src="Converged.png">
+<div style="display: flex;">
+    <img src="Itemsets.png">
+    <img src="Converged.png">
+</div>
+
 
 
 <br/>

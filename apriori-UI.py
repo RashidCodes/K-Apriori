@@ -431,7 +431,7 @@ root.geometry('400x950')
 label = Label(root, text="The Apriori Algorithm", font=("Helvetica", 25), justify=CENTER, height=3)
 label.pack()
 
-label = Label(root, text="Developed by Mohammmed Rashid, U1123916", font=("Helvetica", 15), justify=CENTER)
+label = Label(root, text="Developed by Mohammed Rashid, U1123916", font=("Helvetica", 15), justify=CENTER)
 label.pack()
 
 

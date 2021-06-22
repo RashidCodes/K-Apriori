@@ -206,7 +206,7 @@ label1 = tk.Label(root, text="K-Means Clustering")
 label1.config(font=('helvetica', 20, 'bold'))
 canvas1.create_window(200, 50, window=label1)
 
-name = tk.Label(root, text="Developed by Mohammmed Rashid, U1123916")
+name = tk.Label(root, text="Developed by Mohammed Rashid, U1123916")
 name.config(font=('helvetica', 15))
 canvas1.create_window(200, 100, window=name)
 
