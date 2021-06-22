@@ -3,21 +3,23 @@
 ## Prerequisites
 
 ### Install Python3
-Prior to executing any of the ```*.py``` files in this folder, please make sure that Python 3 is installed on your computer. Click [here](https://www.python.org/downloads/) to learn how to install Python 3. You may also prefer to have multiple versions of python running on your computer. In that case, click [here]("https://docs.python.org/3/library/venv.html") to learn how to create Python virtual environments.
+Prior to executing any of the ```*.py``` files in this folder, please make sure that Python 3 is installed on your computer. Click [here](https://www.python.org/downloads/) to learn how to install Python 3. You may also prefer to have multiple versions of python running on your computer. In that case, click [here](https://docs.python.org/3/library/venv.html) to learn how to create Python virtual environments.
 
 ### Install required packages
 
-The packages required to successfully execute any ```*.py``` file are stored in the ***requirements.txt*** file. Run the following command to install all packages using the ```pip``` package manager.
+The packages required to successfully execute any ```*.py``` file are stored in the ***requirements.txt*** file. Run the following command to install all packages using the ```pip``` package manager, which is installed after downloading python.
+
 ```bash
 pip install -r requirements.txt
 ```
  
+<br/>
 
 ## K-means Clustering UI
-Perform the following tasks to visualize the operation of the K-means clustering algorithm. The algorithm uses the data in **sample.csv** to perform clustering. If you prefer to use your own dataset, please make sure your data has exactly two dimensions with label names, ***x*** and ***y***.
+Perform the following tasks to visualize the operation of the K-means clustering algorithm. The algorithm uses the data in **sample.csv** to perform clustering. If you prefer to use your own dataset, please make sure your data has exactly **two dimensions** with label names, ***x*** and ***y***.
 
 ### Step 1:
-Run the following code in the command line.
+Run the following code in the command line (Make sure you're in the K-apriori directory).
 ```bash
 python3 kmeansUI.py
 ```
@@ -37,6 +39,9 @@ Click on the **Iterate** button to visualize the operation of the K-means cluste
 
 <img src="Stopping condition.png">
 
+### Step 5: Bonus step
+If you want to restart the clustering process, you can click on the **Restart** button.
+
 <br/>
 
 ## K-means Clustering with RFM Data
@@ -55,7 +60,7 @@ Here's a plot of ***frequency*** and ***recency*** dimensions after clustering.
 <br/>
 
 ## The Apriori Algorithm UI
-The apriori application uses the data in the **my_orders.csv** file. The file comprises of data about the order and product information from The Instacart Online Grocery Shopping Dataset 2017. The ***order_id*** is a unique 1-digit code for a transaction whereas the ***product_id*** is a unique 5 digit code for a product.  Perform the following tasks to visually inspect how the aprior algorithm works.
+The apriori application uses the data in the **my_orders.csv** file. The file comprises data about the order and product information from The Instacart Online Grocery Shopping Dataset 2017. The ***order_id*** is a unique 1-digit code for a transaction whereas the ***product_id*** is a unique 5 digit code for a product.  Perform the following tasks to visually inspect how the aprior algorithm works.
 
 ### Step 1:
 Run the following command in the command line
