@@ -13,7 +13,7 @@ pip install -r requirements.txt
 ```
  
 
-## K-means Clustering
+## K-means Clustering UI
 Perform the following tasks to visualize the operation of the K-means clustering algorithm. The algorithm uses the data in **sample.csv** to perform clustering. If you prefer to use your own dataset, please make sure your data has exactly two dimensions with label names, ***x*** and ***y***.
 
 ### Step 1:
@@ -30,7 +30,7 @@ You should see the first screen of the K-means application
 Enter the number of clusters, *k*, in the input field.
 
 ### Step 3:
-Upload the **sample.csv** file by clicking on the **Import CSV** button.
+Upload the **sample.csv** file by clicking on the **Import CSV file** button.
 
 ### Step 4:
 Click on the **Iterate** button to visualize the operation of the K-means clustering. Keep clicking until the application notifies you that the stopping condition has been reached.
@@ -39,7 +39,22 @@ Click on the **Iterate** button to visualize the operation of the K-means cluste
 
 <br/>
 
-## The Apriori Algorithm
+## K-means Clustering with RFM Data
+You can also perform K-means clustering with real world data. The data used in this example comprises the ***recency***, ***frequency***, and ***monetary value*** of customers' purchases from an online retail store. To see a demo, run the following command.
+
+```bash
+python3 kmeans.py
+```
+
+Here's a plot of ***frequency*** and ***recency*** dimensions after clustering.
+
+<img src="Figure_1.png">
+
+<br/>
+
+<br/>
+
+## The Apriori Algorithm UI
 The apriori application uses the data in the **my_orders.csv** file. The file comprises of data about the order and product information from The Instacart Online Grocery Shopping Dataset 2017. The ***order_id*** is a unique 1-digit code for a transaction whereas the ***product_id*** is a unique 5 digit code for a product.  Perform the following tasks to visually inspect how the aprior algorithm works.
 
 ### Step 1:
@@ -57,6 +72,36 @@ Click on the **Iterate** button to see apriori in action. Keep clicking on the b
 
 <img src="Converged.png">
 
+
+<br/>
+
+## The Apriori Algorithm with Order and Product Information.
+The apriori algorithm is supposed to produce some association rules that can be evaluated based on their confidence and lift. Run the following command to see the association rules and their corresponding features. The data used for this demo can be found in ***my_orders.csv***.
+
+```bash
+python3 apriori.py
+```
+
+The association rules are shown in the command line.
+
+```bash
+Association Rules
+------------------
+
+                                      rules  confidence  lift
+0         (26358,) -> (26358, 96553, 32654)        0.67  1.04
+1         (96553,) -> (26358, 96553, 32654)        0.50  1.04
+2         (32654,) -> (26358, 96553, 32654)        0.50  1.04
+3   (26358, 96553) -> (26358, 96553, 32654)        1.00  1.04
+4   (26358, 32654) -> (26358, 96553, 32654)        0.67  1.04
+5   (96553, 32654) -> (26358, 96553, 32654)        0.67  1.04
+6         (57565,) -> (57565, 96553, 32654)        0.67  1.04
+7         (96553,) -> (57565, 96553, 32654)        0.50  1.04
+8         (32654,) -> (57565, 96553, 32654)        0.50  1.04
+9   (57565, 96553) -> (57565, 96553, 32654)        0.67  1.04
+10  (57565, 32654) -> (57565, 96553, 32654)        1.00  1.04
+11  (96553, 32654) -> (57565, 96553, 32654)        0.67  1.04
+```
 
 
 
