@@ -6,6 +6,7 @@ import tkinter as tk
 from tkinter import filedialog
 from matplotlib.backends.backend_tkagg import FigureCanvasTkAgg
 import random
+from mpl_toolkits import mplot3d
 
 
 # GLOBAL VARIABLES
@@ -165,12 +166,29 @@ def kMeans(data):
 
 
 def plot_graph():
-    """Show clusters"""
+    """Show clusters
+    Plots three dimensions if the dataset is a three dimensional, otherwise
+    it plots the first 2 dimensions.
+    """
 
-    for key in clusters.keys():
+    if (np.array(centroids).shape[1] == 3):    
+        ax = plt.axes(projection="3d")
+        for i, key in enumerate(clusters.keys()):
+            cluster = np.array(clusters.get(key))
+            ax.scatter3D(cluster[:, 0], cluster[:, 1], cluster[:, 2])
+            
+            # Plot the centroids
+            ax.scatter3D(np.array(centroids)[i, 0], np.array(centroids)[i, 1], np.array(centroids)[i, 2], marker="x", s = 150)
+            ax.set_title("K-means clustering in action")
+        
+
+        plt.show()
+        return;
+        
+    for i, key in enumerate(clusters.keys()):
         cluster = np.array(clusters.get(key))
         plt.scatter(cluster[:, 0], cluster[:, 1])
-        plt.scatter(np.array(centroids)[:, 0], np.array(centroids)[:, 1], marker="x")
+        plt.scatter(np.array(centroids)[i, 0], np.array(centroids)[i, 1], marker="x", s=20)
         plt.title("K-Means Clustering in Action")
 
     plt.show()
