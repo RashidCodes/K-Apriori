@@ -23,7 +23,6 @@ python3 kmeansUI.py
 ```
 
 You should see the first screen of the K-means application
-!["First screen of the k-means application"]("./Kmeans ui.png")
 <img src="Kmeans ui.png">
 
 ### Step 2: 
@@ -34,7 +33,7 @@ Upload the **sample.csv** file by clicking on the **Import CSV** button.
 
 ### Step 4:
 Click on the **Iterate** button to visualize the operation of the K-means clustering. Keep clicking until the application notifies you that the stopping condition has been reached.
-!["Stopping condition has been reached"]("Stopping condition.png")
+<img src="Stopping condition.png">
 
 <br/>
 
@@ -48,11 +47,11 @@ python3 apriori-UI.py
 ```
 
 You should see the first screen of the application.
-["First screen of the apriori application"]("First apriori.png")
+<img src="First apriori.png">
 
 ### Step 2:
 Click on the **Iterate** button to see apriori in action. Keep clicking on the button until the algorithm converges.
-["Apriori converged"]("Converged.png")
+<img src="Converged.png">
 
 
 
