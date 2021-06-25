@@ -85,7 +85,7 @@ Click on the **Iterate** button to see apriori in action. Keep clicking on the b
 <br/>
 
 ## The Apriori Algorithm with Order and Product Information.
-The apriori algorithm is supposed to produce association rules that are evaluated based on their confidence and lift. Run the following command to see the association rules and their corresponding features. The data used for this demo can be found in ***my_orders.csv***.
+The apriori algorithm is supposed to produce association rules that are evaluated based on their **confidence** and **lift**. Run the following command to see the association rules and their corresponding features. The data used for this demo can be found in ***my_orders.csv***.
 
 ```bash
 python3 apriori.py
