@@ -11,7 +11,7 @@ from mpl_toolkits import mplot3d
 
 # GLOBAL VARIABLES
 clusters = {}
-centroids = []
+centroids = [[4, 9], [0.7, 1.1], [4.3, 1.8], [4.1, 8]]
 df = {}
 
 
@@ -145,10 +145,19 @@ def kMeans(data):
         
         # add it to the clusters        
         clusters[cluster_number].append(list(data.iloc[i])) 
+
+    # print out the clusters
+    print(clusters)
         
     # update the centroids after cluster assignment   
     for i in clusters.keys():
         myCentroids.append(compute_centroids(clusters[i]).tolist())
+
+    # print the centroids
+    tk.messagebox.showinfo(title='Cluster centers', message = "Centroids: {}".format(centroids))
+
+    # plot the graph
+    plot_graph()
 
     # stopping condition
     if(myCentroids == centroids):
@@ -157,9 +166,9 @@ def kMeans(data):
         return
     
     centroids = myCentroids
-    tk.messagebox.showinfo(title='Cluster centers', message = "Centroids: {}".format(centroids))
+    
 
-    plot_graph()
+    
     
     
 

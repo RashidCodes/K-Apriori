@@ -126,14 +126,17 @@ def kMeans(data, k, max_iterations=500):
         for i in clusters.keys():
             myCentroids.append(compute_centroids(clusters[i]).tolist())
 
+        
+
         # stopping condition
         if(myCentroids == centroids):
+            plot_graph()
             break;
         
 
         centroids = myCentroids
 
-    plot_graph()
+    
     
     
     

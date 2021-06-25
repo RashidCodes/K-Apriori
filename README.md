@@ -51,7 +51,7 @@ You can also perform K-means clustering with real world data. The data used in t
 python3 kmeans.py
 ```
 
-Here's a plot of ***frequency*** and ***recency*** dimensions after clustering.
+Here's a plot of ***frequency***, ***recency***, and ***monetary value*** dimensions after clustering.
 
 <img src="Figure_1.png">
 
